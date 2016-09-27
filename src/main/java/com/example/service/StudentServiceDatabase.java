@@ -44,6 +44,8 @@ public class StudentServiceDatabase implements StudentService
     @Override
     public void deleteStudent (String npm)
     {
+    	log.info ("student " + npm + " deleted");
+    	studentMapper.deleteStudent(npm);
     }
 
 }
