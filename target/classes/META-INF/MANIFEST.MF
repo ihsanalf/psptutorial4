@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: PDBTutorial04
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: overlored
+Built-By: Abi
 Implementation-Vendor-Id: com.example
-Build-Jdk: 1.8.0_102
+Build-Jdk: 1.8.0_101
 Implementation-URL: http://projects.spring.io/spring-boot/PDBTutorial0
  4/
 Created-By: Maven Integration for Eclipse

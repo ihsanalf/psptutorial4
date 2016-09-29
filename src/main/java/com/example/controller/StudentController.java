@@ -91,9 +91,15 @@ public class StudentController
     @RequestMapping("/student/delete/{npm}")
     public String delete (Model model, @PathVariable(value = "npm") String npm)
     {
-        studentDAO.deleteStudent (npm);
+    	StudentModel student = studentDAO.selectStudent (npm);
 
-        return "delete";
+        if (student != null) {
+        	studentDAO.deleteStudent (npm);
+            return "delete";
+        } else {
+            model.addAttribute ("npm", npm);
+            return "not-found";
+        }
     }
 
 }
