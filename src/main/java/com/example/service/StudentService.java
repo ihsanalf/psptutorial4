@@ -6,14 +6,13 @@ import com.example.model.StudentModel;
 
 public interface StudentService
 {
-    StudentModel selectStudent (String npm);
+    StudentModel selectStudent(String npm);
 
+    List<StudentModel> selectAllStudents();
 
-    List<StudentModel> selectAllStudents ();
+    void addStudent(StudentModel student);
 
-
-    void addStudent (StudentModel student);
-
-
-    void deleteStudent (String npm);
+    void deleteStudent(String npm);
+    
+    void updateStudent(StudentModel student);
 }
